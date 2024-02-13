@@ -3,14 +3,17 @@
 *:after {
  font-family: 'Quicksand', sans-serif;
 }
+
 h1 {
 display:flex;
 justify-content:center;
 align-items:center;
+color:white
 }
+
 body {
     margin: 0;
-    background-color: 
+    background-color:#134d71
 }
 
 /*COLORS*/
