@@ -1,5 +1,20 @@
-/* font-family: 'Quicksand', sans-serif;
-COLORS
+*,
+*:before,
+*:after {
+ font-family: 'Quicksand', sans-serif;
+}
+h1 {
+display:flex;
+justify-content:center;
+align-items:center;
+}
+body {
+    margin: 0;
+    background-color: 
+}
+
+/*COLORS*/
+
 light-yellow - #f7e4bf;
 light-blue - #78a7c6;
 dark-blue - #134d71;
