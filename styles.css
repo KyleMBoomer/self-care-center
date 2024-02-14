@@ -6,15 +6,28 @@
 
 h1 {
 display:flex;
+text-align:left;
+margin: 30px;
 justify-content:center;
 align-items:center;
 color:white
 }
 
+h2 {
+display:flex;
+margin: 100px;
+justify-content:center;
+color:white;
+height:50px;
+
+}
+
+
 body {
     margin: 0;
-    background-color:#134d71
-}
+    background:linear-gradient(#134d71, #78a7c6,#f7e4bf);
+    height:100vh
+    }
 
 /*COLORS*/
 
