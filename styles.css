@@ -15,19 +15,34 @@ color:white
 
 h2 {
 display:flex;
-margin: 100px;
+margin-top: 200px;
+margin-bottom: 0 auto;
 justify-content:center;
 color:white;
-height:50px;
-
+height:20px;
 }
 
 
 body {
     margin: 0;
     background:linear-gradient(#134d71, #78a7c6,#f7e4bf);
-    height:100vh
+    height:100vh;
     }
+
+.controls {
+    background:white;
+    display: flex;
+    justify-content: center;
+    margin-right:550px;
+    margin-left:550px;
+    padding:20px;
+    border-radius:10px
+}
+
+
+
+
+
 
 /*COLORS*/
 
