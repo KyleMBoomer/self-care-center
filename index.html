@@ -5,16 +5,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <h1> &#x2728Self-Care Center&#x2728</h1>
+    <title> &#x2728Self-Care Center&#x2728</title>
     </head>
   <body>
-    <h2>Which type of message?</h2>
-    <span class="controls">
-      <button class= "affirmation-button"></button>
-      <p><em>affirmation</em></p>
-      <button class="mantra"></button>
-      <p><em>mantra</em></p>
-    </span>
+    <h1> &#x2728Self-Care Center&#x2728</h1>
+  
+    <div class="controls">
+      <h2>Which type of message?</h2>
+      <div class="buttons">
+        <div class="radio-buttons">
+          <input type="radio" class="radio-buttons" id="affirmation" name="message_type" value="affirmation">
+          <label for="affirmation">affirmation</label>
+          <input type="radio" class="radio-buttons" id="mantra" name="message_type" value="mantra">
+          <label for="mantra">mantra</label>
+        </div>
+        <button class="receive-message-button">Receive Message</button>
+      </div>
+    </div>  
+      
+    <section class="yogi-img-box">
+      <img src="assets/meditate.svg" alt="meditation">
+    </section>
   
     <script type="text/javascript" src="main.js"></script>
   </body>
