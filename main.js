@@ -2,7 +2,6 @@ var affirmButton = document.querySelector(".affirmation-button")
 var mantraButton = document.querySelector(".mantra-button")
 var receiveButton = document.querySelector('.receive-message-button')
 var wisdom = document.querySelector(".wisdom")
-var yogi = document.querySelector("img")
 
 var affirmNuggets = ["Life is like a box of chocolates; you never know what you're gonna get.",
 "You can't handle the truth!","You're killin' me, Smalls!", "What would you say ya do here?", 
@@ -22,23 +21,27 @@ var mantraNuggets = [ "I'm the king of the world!",
 
 receiveButton.addEventListener('click', helpSelf)
 
-function getRandomWisdom(array) {
-    var randomIndex = Math.floor(Math.random() * array.length)
-    return array[randomIndex]
+function getRandomAffirmation(affirmNuggets) {
+    var randomIndex = Math.floor(Math.random() * affirmNuggets.length)
+    return affirmNuggets[randomIndex]
       } 
     
+function getRandomMantra(mantraNuggets) {
+    var randomIndex = Math.floor(Math.random() * mantraNuggets.length)
+    return mantraNuggets[randomIndex]
+}
 function helpSelf() {
     if(affirmButton.checked) {
-        wisdom.innerText = getRandomWisdom(affirmNuggets)
+        wisdom.innerText = getRandomAffirmation(affirmNuggets)
     } else if(mantraButton.checked) {
-        wisdom.innerText = getRandomWisdom(mantraNuggets)
+        wisdom.innerText = getRandomMantra(mantraNuggets)
         }
         toggleDisplay()
-        console.log(wisdom) 
+        console.log(wisdom.innerText)
     }
     
 function toggleDisplay() {
-        document.querySelector('.wisdom').classList.remove('hidden')
+        document.querySelector('.wisdom').classList.toggle('hidden')
         document.querySelector('img').classList.toggle('hidden')
        }
 
