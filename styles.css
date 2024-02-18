@@ -80,11 +80,11 @@ h2 {
     display:none;
 }
 
-.advice {
+.wisdom {
+    display:block;
     font-size: medium;
     font-family: 'Quicksand', sans-serif;
     color:#134d71;
-    display:hidden;
 }
 
 
