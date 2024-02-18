@@ -1,5 +1,5 @@
-var affirmButton = document.querySelector(".affirmation-button")
-var mantraButton = document.querySelector(".mantra-button")
+var affirmButton = document.querySelector("#affirmation")
+var mantraButton = document.querySelector("#mantra")
 var receiveButton = document.querySelector('.receive-message-button')
 var wisdom = document.querySelector(".wisdom")
 
@@ -14,12 +14,14 @@ var mantraNuggets = [ "I'm the king of the world!",
 "I feel the need... the need for speed!","Show me the money!","To infinity and beyond!",
 "It's not a tumah!","If peeing your pants is cool, consider me Miles Davis.",
 "There is no spoon","You are not your job",
-"Cowabunga!","I'm good enough, I'm smart enough, and, doggonit people like me","Life, uh, finds a way",
+"Cowabunga!","I'm good enough, I'm smart enough, and doggonit, people like me","Life, uh, finds a way",
 "Do. Or do not. There is no try", "I know kung-fu","I feel good, I feel great, I feel wonderful",
 "Advertising has us chasing cars and clothes, working jobs we hate so we can buy shit we don't need",
 ]
 
 receiveButton.addEventListener('click', helpSelf)
+affirmButton.addEventListener('click', returnImg)
+mantraButton.addEventListener('click', returnImg)
 
 function getRandomAffirmation(affirmNuggets) {
     var randomIndex = Math.floor(Math.random() * affirmNuggets.length)
@@ -42,10 +44,12 @@ function helpSelf() {
     
 function toggleDisplay() {
         document.querySelector('.wisdom').classList.toggle('hidden')
-        document.querySelector('img').classList.toggle('hidden')
+        document.querySelector('img').classList.add('hidden')
        }
 
-
+function returnImg() {
+    document.querySelector("img").classList.remove('hidden')
+}
  
 
 
