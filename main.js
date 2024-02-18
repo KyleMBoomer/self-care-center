@@ -1,51 +1,49 @@
 var affirmButton = document.querySelector(".affirmation-button")
 var mantraButton = document.querySelector(".mantra-button")
 var receiveButton = document.querySelector('.receive-message-button')
-var advice = document.querySelector(".advice")
-
-
-var mantraNuggets = [ "I'm the king of the world!",
-"I feel the need... the need for speed!",
-"Show me the money!",
-"To infinity and beyond!",
-"It's not a tumah!",
-"If peeing your pants is cool, consider me Miles Davis.",
-"There is no spoon",
-"You are not your job",
-"Cowabunga!","I'm good enough, I'm smart enough, and, doggonit people like me",
-]
+var wisdom = document.querySelector(".wisdom")
+var yogi = document.querySelector("img")
 
 var affirmNuggets = ["Life is like a box of chocolates; you never know what you're gonna get.",
 "You can't handle the truth!","You're killin' me, Smalls!", "What would you say ya do here?", 
-"You are the al-seeing, all-dancing crap of the world", 
-"It's not your fault", 
+"You are the all-seeing, all-dancing crap of the world", "That'll do, pig. That'll do", 
 "Show me the heart unfettered by foolish dreams, and I'll show you a happy person", 
-"No matter what anybody tells you, words can change the world"
+"No matter what anybody tells you, words can change the world", "Luminous beings are we! Not this crude matter","The things you own end up owning you",
+]
+
+var mantraNuggets = [ "I'm the king of the world!",
+"I feel the need... the need for speed!","Show me the money!","To infinity and beyond!",
+"It's not a tumah!","If peeing your pants is cool, consider me Miles Davis.",
+"There is no spoon","You are not your job",
+"Cowabunga!","I'm good enough, I'm smart enough, and, doggonit people like me","Life, uh, finds a way",
+"Do. Or do not. There is no try", "I know kung-fu","I feel good, I feel great, I feel wonderful",
+"Advertising has us chasing cars and clothes, working jobs we hate so we can buy shit we don't need",
 ]
 
 receiveButton.addEventListener('click', helpSelf)
 
 function getRandomWisdom(array) {
-    return Math.floor(Math.random() * array.length)
-  }
-
-  
-
+    var randomIndex = Math.floor(Math.random() * array.length)
+    return array[randomIndex]
+      } 
+    
 function helpSelf() {
-    document.querySelector("advice").classList.toggle("hidden")
-    document.querySelector("yogi-img").classList.toggle("hidden")
-    var randomAffirmations = getRandomWisdom(affirmNuggets)
-    var randomMantras = getRandomWisdom(mantraNuggets)
-
-       if(affirmButton.checked) {
-        advice.innerText = affirmNuggets[randomAffirmations]
+    if(affirmButton.checked) {
+        wisdom.innerText = getRandomWisdom(affirmNuggets)
     } else if(mantraButton.checked) {
-        advice.innerText = mantraNuggets[randomMantras]
-    } 
-    console.log('randomAffirmations', randomAffirmations)
-    console.log('randoMantras', randomMantras)  
-}
+        wisdom.innerText = getRandomWisdom(mantraNuggets)
+        }
+        toggleDisplay()
+        console.log(wisdom) 
+    }
+    
+function toggleDisplay() {
+        document.querySelector('.wisdom').classList.remove('hidden')
+        document.querySelector('img').classList.toggle('hidden')
+       }
 
+
+ 
 
 
 
