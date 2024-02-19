@@ -15,7 +15,8 @@ file:///Users/kylemarkboomer/Mod_1/self-care-center/index.html
 
 ### Preview of App:
 [//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
-Simply click on the Self-Care-Center JPEG in this repo. 
+ 
+![Self-Care Center](https://github.com/KyleMBoomer/self-care-center/assets/156006806/5ccfeae9-660a-4e11-acc3-68bd34b6e84e)
 
 ### Context:
 [//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
