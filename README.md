@@ -9,7 +9,7 @@ I constructed a page that features an excellent stress-reliever in the form of a
 
 ### Installation Instructions:
 [//]: <> (What steps does a person have to take to get your app cloned down and running?)
-Simply click the link below for endless, free life advice. 
+Simply copy and paste the link below into your browser for endless, free life advice. 
 file:///Users/kylemarkboomer/Mod_1/self-care-center/index.html
 
 
